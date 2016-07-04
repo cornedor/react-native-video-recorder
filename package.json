@@ -9,7 +9,7 @@
   },
   "rnpm": {
     "android": {
-      "packageInstance": "new VideoRecorder(this)"
+      "packageInstance": "new VideoRecorderPackage(this)"
     }
   }
 }
