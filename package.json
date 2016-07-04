@@ -12,5 +12,6 @@
     "android": {
       "packageInstance": "new VideoRecorderPackage(this)"
     }
-  }
+  },
+  "repository": "cornedor/react-native-video-recorder"
 }
