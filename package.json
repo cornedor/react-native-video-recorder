@@ -1,0 +1,15 @@
+{
+  "name": "react-native-video-recorder",
+  "main": "VideoRecorder.js",
+  "license": "MIT",
+  "description": "A <VideoRecorder /> element using Camera2 API for react-native",
+  "author": {
+    "email": "contact@corne.info",
+    "name": "Corné Dorrestijn"
+  },
+  "rnpm": {
+    "android": {
+      "packageInstance": "new VideoRecorder(this)"
+    }
+  }
+}
