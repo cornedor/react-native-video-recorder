@@ -5,7 +5,7 @@ import ReactNative, {
   StyleSheet,
 } from 'react-native';
 
-const NVideoRecorder = requireNativeComponent('NVideoRecorder', VideoRecorder, {});
+const NVideoRecorder = requireNativeComponent('VideoRecorder', VideoRecorder, {});
 
 const styles = StyleSheet.create({
   camera: {
@@ -50,7 +50,7 @@ VideoRecorder.propTypes = {
   onRecordingFinished: PropTypes.func,
   onCameraAccessException: PropTypes.func,
   onCameraFailed: PropTypes.func,
-  type: PropTypes.oneOn(['front', 'back']),
+  type: PropTypes.oneOf(['front', 'back']),
   videoEncodingBitrate: PropTypes.number,
   videoEncodingFrameRate: PropTypes.number
 };
