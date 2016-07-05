@@ -19,6 +19,6 @@ import VideoRecorder from 'react-native-video-recorder';
   videoEncodingFrameRate={30}
 />
 
-this.refs.recorder.start();
+this.refs.recorder.record();
 this.refs.recorder.stop();
 ```

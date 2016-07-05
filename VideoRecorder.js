@@ -22,10 +22,10 @@ export default class VideoRecorder extends Component {
     );
   }
 
-  start() {
+  record() {
     UIManager.dispatchViewManagerCommand(
       this.getNodeHandle(),
-      UIManager.VideoRecorder.Commands.start,
+      UIManager.VideoRecorder.Commands.record,
       null
     );
   }
