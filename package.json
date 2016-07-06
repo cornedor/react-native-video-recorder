@@ -1,6 +1,6 @@
 {
   "name": "react-native-video-recorder",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "VideoRecorder.js",
   "license": "MIT",
   "description": "A <VideoRecorder /> element using Camera2 API for react-native",
