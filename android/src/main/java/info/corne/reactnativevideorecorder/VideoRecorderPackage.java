@@ -1,6 +1,7 @@
 package info.corne.reactnativevideorecorder;
 
 import android.app.Activity;
+import android.content.Context;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
@@ -18,11 +19,6 @@ import java.util.List;
  */
 
 public class VideoRecorderPackage implements ReactPackage {
-    private Activity mActivity;
-
-    public VideoRecorderPackage(Activity activity) {
-        mActivity = activity;
-    }
 
     @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
@@ -31,7 +27,7 @@ public class VideoRecorderPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext context) {
-        return Arrays.<ViewManager>asList(new VideoRecorderManager(mActivity));
+        return Arrays.<ViewManager>asList(new VideoRecorderManager(context.getCurrentActivity()));
     }
 
     @Override
@@ -39,4 +35,5 @@ public class VideoRecorderPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
         return modules;
     }
+
 }
